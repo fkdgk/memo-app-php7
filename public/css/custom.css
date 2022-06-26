@@ -1,0 +1,39 @@
+table.table thead tr th,
+table.table thead tr td,
+table.table tbody tr th,
+table.table tbody tr td{
+  white-space: nowrap;
+}
+
+.td-div{
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+  overflow: visible;
+}
+
+.card{
+  margin-bottom: 1rem;
+}
+
+.content{
+  margin: 0 0 1rem;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-nav .dropdown-menu {
+  padding: 0;
+}
+
+.navbar-nav .dropdown-menu a.dropdown-item{
+  padding: 0.5rem 1.5rem;
+  border-bottom: solid 1px #ccc;
+}
+
+.select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--multiple:focus, 
+.select2-container--default:focus .select2-selection--multiple {
+  border: 1px solid #ced4da;
+}

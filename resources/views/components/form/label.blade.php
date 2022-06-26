@@ -1,0 +1,1 @@
+<label for="{{$name}}" class="form-label d-block">{{$label}}</label>
