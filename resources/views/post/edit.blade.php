@@ -14,9 +14,16 @@
 
     {{-- 削除用フォーム --}}
     <x-content.content position='right'>
-        {{ Form::open(['route'=>['post.delete',$post],'class'=>'d-block']) }}
+        {{ Form::open(['route'=>['post.delete',$post],'class'=>'d-block','id'=>'post-delete']) }}
             <x-button.button type='submit' name='削除' color='outline-danger' class='px-5' size='sm' />
         {{ Form::close() }}
+        <script>
+            document.getElementById('post-delete').addEventListener('submit', function(e) {
+                if(!confirm('削除しますか？')){
+                    e.preventDefault();
+                }
+            });
+        </script>
     </x-content.content>
 
     </x-col.col>
